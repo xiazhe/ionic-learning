@@ -16,3 +16,10 @@ For iOS developers, take a look at the Cordova iOS Platform Guide and follow the
 
 For Android developers, take a look at the Cordova Android Platform Guide and follow the instructions to install the SDK and/or Android Studio to start building apps for Android.
 
+create your first Ionic app
+ $ ionic start projectname --version
+ $ ionic start MyIonic2Project tutorial --v2
+
+ install npm modules for the application
+ $ npm insatll 
+ $ ionic serve
