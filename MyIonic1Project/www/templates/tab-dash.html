@@ -1,30 +1,222 @@
-<ion-view view-title="万商联购">
-  <ion-pane class="padding" scroll="false">
-   <!--  <h2>Welcome to Ionic</h2>
-    <p>
-    This is the Ionic starter for tabs-based apps. For other starters and ready-made templates, check out the <a href="http://market.ionic.io/starters" target="_blank">Ionic Market</a>.
-    </p>
-    <p>
-      To edit the content of each tab, edit the corresponding template file in <code>www/templates/</code>. This template is <code>www/templates/tab-dash.html</code>
-    </p>
-    <p>
-    If you need help with your app, join the Ionic Community on the <a href="http://forum.ionicframework.com" target="_blank">Ionic Forum</a>. Make sure to <a href="http://twitter.com/ionicframework" target="_blank">follow us</a> on Twitter to get important updates and announcements for Ionic developers.
-    </p>
-    <p>
-      For help sending push notifications, join the <a href="https://apps.ionic.io/signup" target="_blank">Ionic Platform</a> and check out <a href="http://docs.ionic.io/docs/push-overview" target="_blank">Ionic Push</a>. We also have other services available.
-    </p>
-delegate-handle="Tabs"
-     -->
+<ion-view view-title="Dashboard " class="dashboard">
+    <ion-pane scroll="false">
+        <!--  <h2>Welcome to Ionic</h2>
+            <p>
+            This is the Ionic starter for tabs-based apps. For other starters and ready-made templates, check out the <a href="http://market.ionic.io/starters" target="_blank">Ionic Market</a>.
+            </p>
+            <p>
+              To edit the content of each tab, edit the corresponding template file in <code>www/templates/</code>. This template is <code>www/templates/tab-dash.html</code>
+            </p>
+            <p>
+            If you need help with your app, join the Ionic Community on the <a href="http://forum.ionicframework.com" target="_blank">Ionic Forum</a>. Make sure to <a href="http://twitter.com/ionicframework" target="_blank">follow us</a> on Twitter to get important updates and announcements for Ionic developers.
+            </p>
+            <p>
+              For help sending push notifications, join the <a href="https://apps.ionic.io/signup" target="_blank">Ionic Platform</a> and check out <a href="http://docs.ionic.io/docs/push-overview" target="_blank">Ionic Push</a>. We also have other services available.
+            </p>
+        delegate-handle="Tabs"
+             -->
+        <!-- <div style="padding-top: 46px;" class="tabs-box" >
+          <ion-tabs class="tabs-positive tabs-icon-only top_tabs" delegate-handle="topTabs">
+            <ion-tab title="帮助">
+              <div class="tab-content">content</div>
+            </ion-tab>
+            <ion-tab title="文档">
+              <div class="tab-detail">
+              content2
+              </div>
+            </ion-tab>
+            <ion-tab title="666">
+              <div class="tab-detail">
+              666666666666
+              </div>
+            </ion-tab>
+        </ion-tabs>
+         </div> -->
+        <!--<ion-tabs class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+            <ion-tab title="首页" icon-off="ion-ios-home-outline" icon-on="ion-ios-home">
+                111
+            </ion-tab>
+            <ion-tab title="联系人" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes">
+                222
+            </ion-tab>
+            <ion-tab title="购物车" icon-off="ion-ios-cart-outline" icon-on="ion-ios-cart">
+                333
+            </ion-tab>
+            <ion-tab title="设置" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear">
+                444
+            </ion-tab>
+        </ion-tabs>-->
+        <!--text only
+            http://stackoverflow.com/questions/30460750/how-to-insert-tabs-inside-ion-content-in-ionic
+            -->
+        <ion-tabs class="tabs-striped tabs-top tabs-background-dark tabs-color-light">
 
-    <ion-tabs class="tabs-positive tabs-icon-only " >
-        <ion-tab title="帮助">
-          content
-        </ion-tab>
-        <ion-tab title="文档">
-          content2
-        </ion-tab>
-    </ion-tabs>
+            <!-- Dashboard Tab -->
+            <ion-tab title="帮助" href="#/tab/tab1">
+                <ion-nav-view name="tab-tab1" class="tab-help">
+                    <ion-content>
+                        <h3 class="title"><a >Tabs</a></h3>
+                        <p><img src="img/rest.jpg" width="100%" /></p>
+                        <p>
+                            Add <code>tabs-striped</code> to an element above the <code>tabs</code> classname for Android style tabs.
+                        </p>
+                        <p>
+                            Optionally, also add <code>tabs-top</code> to position the tab at the top
+                        </p>
+                        <p>
+                            Get granular color control for striped tabs with the <code>tabs-background-{color}</code> and
+                            <code>tabs-color-{color}</code> classes, where <code>{color}</code> is any of the ionic color swatches:
+                            <code>default</code>,
+                            <code>light</code>,
+                            <code>stable</code>,
+                            <code>positive</code>,
+                            <code>calm</code>,
+                            <code>balanced</code>,
+                            <code>energized</code>,
+                            <code>assertive</code>,
+                            <code>royal</code>, or
+                            <code>dark</code>
+                        </p>
+                        <p>
+                            Note, that to have the header blend with the top tabs, add the <code>has-tabs-top</code> class to the header.
+                        </p>
+                        <p>
+                            Add <code>tabs-striped</code> to an element above the <code>tabs</code> classname for Android style tabs.
+                        </p>
+                        <p>
+                            Optionally, also add <code>tabs-top</code> to position the tab at the top
+                        </p>
+                        <p>
+                            Get granular color control for striped tabs with the <code>tabs-background-{color}</code> and
+                            <code>tabs-color-{color}</code> classes, where <code>{color}</code> is any of the ionic color swatches:
+                            <code>default</code>,
+                            <code>light</code>,
+                            <code>stable</code>,
+                            <code>positive</code>,
+                            <code>calm</code>,
+                            <code>balanced</code>,
+                            <code>energized</code>,
+                            <code>assertive</code>,
+                            <code>royal</code>, or
+                            <code>dark</code>
+                        </p>
+                        <p>
+                            Note, that to have the header blend with the top tabs, add the <code>has-tabs-top</code> class to the header.
+                        </p>
+                        <p>
+                            Add <code>tabs-striped</code> to an element above the <code>tabs</code> classname for Android style tabs.
+                        </p>
+                        <p>
+                            Optionally, also add <code>tabs-top</code> to position the tab at the top
+                        </p>
+                        <p>
+                            Get granular color control for striped tabs with the <code>tabs-background-{color}</code> and
+                            <code>tabs-color-{color}</code> classes, where <code>{color}</code> is any of the ionic color swatches:
+                            <code>default</code>,
+                            <code>light</code>,
+                            <code>stable</code>,
+                            <code>positive</code>,
+                            <code>calm</code>,
+                            <code>balanced</code>,
+                            <code>energized</code>,
+                            <code>assertive</code>,
+                            <code>royal</code>, or
+                            <code>dark</code>
+                        </p>
+                        <p>
+                            Note, that to have the header blend with the top tabs, add the <code>has-tabs-top</code> class to the header.
+                        </p>
+                        <p>
+                            Add <code>tabs-striped</code> to an element above the <code>tabs</code> classname for Android style tabs.
+                        </p>
+                        <p>
+                            Optionally, also add <code>tabs-top</code> to position the tab at the top
+                        </p>
+                        <p>
+                            Get granular color control for striped tabs with the <code>tabs-background-{color}</code> and
+                            <code>tabs-color-{color}</code> classes, where <code>{color}</code> is any of the ionic color swatches:
+                            <code>default</code>,
+                            <code>light</code>,
+                            <code>stable</code>,
+                            <code>positive</code>,
+                            <code>calm</code>,
+                            <code>balanced</code>,
+                            <code>energized</code>,
+                            <code>assertive</code>,
+                            <code>royal</code>, or
+                            <code>dark</code>
+                        </p>
+                        <p>
+                            Note, that to have the header blend with the top tabs, add the <code>has-tabs-top</code> class to the header.
+                        </p>
+                        <p>
+                            Add <code>tabs-striped</code> to an element above the <code>tabs</code> classname for Android style tabs.
+                        </p>
+                        <p>
+                            Optionally, also add <code>tabs-top</code> to position the tab at the top
+                        </p>
+                        <p>
+                            Get granular color control for striped tabs with the <code>tabs-background-{color}</code> and
+                            <code>tabs-color-{color}</code> classes, where <code>{color}</code> is any of the ionic color swatches:
+                            <code>default</code>,
+                            <code>light</code>,
+                            <code>stable</code>,
+                            <code>positive</code>,
+                            <code>calm</code>,
+                            <code>balanced</code>,
+                            <code>energized</code>,
+                            <code>assertive</code>,
+                            <code>royal</code>, or
+                            <code>dark</code>
+                        </p>
+                        <p>
+                            Note, that to have the header blend with the top tabs, add the <code>has-tabs-top</code> class to the header.
+                        </p>
+
+                        
+                    </ion-content>
+                </ion-nav-view>
+            </ion-tab>
+
+            <!-- Chats Tab -->
+            <!--  href="#/tab/chats/{{chat.id}}" -->
+            <ion-tab title="查询" href="#/tab/tab2">
+                <ion-nav-view name="tab-tab2">
+                    <ion-content>
+                        <ion-list>
+                            <ion-item class="item-remove-animate " 
+                                      ng-repeat="chat in chats" 
+                                      type="item-text-wrap"
+                                      href="#/search">
+                                <!--<img ng-src="{{chat.face}}" width="100%">-->
+                                <img src="img/img.jpg" width="100%">
+                                <h2>{{chat.name}}</h2>
+                                <p>{{chat.lastText}}</p>
+                            </ion-item>
+                        </ion-list>
+                    </ion-content>
+                </ion-nav-view>
+            </ion-tab>
+            <!-- Cart Tab -->
+            <ion-tab title="统计" href="#/tab/tab3">
+                <ion-nav-view name="tab-tab3">
+                    <ion-content>
+                        Tab 3 content
+                    </ion-content>
+                </ion-nav-view>
+            </ion-tab>
+            <!-- Account Tab -->
+            <ion-tab title="设置" href="#/tab/tab4">
+                <ion-nav-view name="tab-tab4">
+                    <ion-content>
+                        Tab 4 content
+                    </ion-content>
+                </ion-nav-view>
+            </ion-tab>
 
 
-  </ion-pane>
+        </ion-tabs>
+
+
+    </ion-pane>
 </ion-view>
