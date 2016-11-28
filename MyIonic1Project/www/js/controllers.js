@@ -3,6 +3,28 @@ angular.module('starter.controllers', [])
 .controller('DashCtrl', function ($scope, $stateParams, Chats) {
     $scope.chats = Chats.all();
 
+    $scope.sheetData = [
+    {
+        name: "AiA",
+        code: "AI101",
+        limit: 25000,
+        account: "Life Insurance"
+    },
+    {
+        name: "Cargills",
+        code: "CF001",
+        limit: 30000,
+        account: "Food City"
+    }
+    ];
+
+    function add(index) {
+        window.alert("Added: " + index);
+    }
+
+    $scope.add = add;
+
+
 })
 
 .controller('SearchCtrl', function ($scope, $stateParams, Chats, $ionicHistory, $window) {
