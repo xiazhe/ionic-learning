@@ -26,6 +26,11 @@ $dark:                            #444 !default;
 
 .dashboard {
 
+    .has-tabs-top {
+        top: 75px;
+        bottom: 50px;
+    }
+
     .tabs-striped {
         .tabs {
             height: 30px;
@@ -49,6 +54,8 @@ $dark:                            #444 !default;
         }
     }
 }
+
+
 
 
 code {

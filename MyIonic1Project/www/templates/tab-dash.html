@@ -55,7 +55,7 @@
             <ion-tab title="帮助" href="#/tab/tab1">
                 <ion-nav-view name="tab-tab1" class="tab-help">
                     <ion-content>
-                        <h3 class="title"><a >Tabs</a></h3>
+                        <h3 class="title"><a>Tabs</a></h3>
                         <p><img src="img/rest.jpg" width="100%" /></p>
                         <p>
                             Add <code>tabs-striped</code> to an element above the <code>tabs</code> classname for Android style tabs.
@@ -173,7 +173,7 @@
                             Note, that to have the header blend with the top tabs, add the <code>has-tabs-top</code> class to the header.
                         </p>
 
-                        
+
                     </ion-content>
                 </ion-nav-view>
             </ion-tab>
@@ -183,17 +183,32 @@
             <ion-tab title="查询" href="#/tab/tab2">
                 <ion-nav-view name="tab-tab2">
                     <ion-content>
-                        <ion-list>
-                            <ion-item class="item-remove-animate " 
-                                      ng-repeat="chat in chats" 
+                        <!--<ion-list>
+                            <ion-item class="item-remove-animate "
+                                      ng-repeat="chat in chats"
                                       type="item-text-wrap"
                                       href="#/search">
-                                <!--<img ng-src="{{chat.face}}" width="100%">-->
+                                <img ng-src="{{chat.face}}" width="100%">
                                 <img src="img/img.jpg" width="100%">
                                 <h2>{{chat.name}}</h2>
                                 <p>{{chat.lastText}}</p>
                             </ion-item>
-                        </ion-list>
+                        </ion-list>-->
+
+                        <div class="list card" ng-repeat="chat in chats">
+                            <div class="item item-body">
+                                <a href="#/search"><img class="full-image" src="img/img.jpg"></a>
+                                <p>
+                                    This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+                                    the content is from a card-body consisting of an image and paragraph text. The footer
+                                    consists of tabs, icons aligned left, within the card-footer.
+                                </p>
+                                <p>
+                                    <a href="#" class="subdued">1 Like</a>
+                                    <a href="#" class="subdued">5 Comments</a>
+                                </p>
+                            </div>
+                        </div>
                     </ion-content>
                 </ion-nav-view>
             </ion-tab>
