@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function ($scope, $stateParams, Chats) {
+.controller('DashCtrl', ['$scope', '$stateParams', 'Chats', '$ionicTabsDelegate', '$timeout', function ($scope, $stateParams, Chats, $ionicTabsDelegate, $timeout) {
     $scope.chats = Chats.all();
 
     $scope.sheetData = [
@@ -23,9 +23,11 @@ angular.module('starter.controllers', [])
     }
 
     $scope.add = add;
+    $timeout(function () {
+        $ionicTabsDelegate.$getByHandle('dashTabs').select(2);
+    }, 200);
 
-
-})
+}])
 
 .controller('SearchCtrl', function ($scope, $stateParams, Chats, $ionicHistory, $window) {
     $scope.goBack = function () {
