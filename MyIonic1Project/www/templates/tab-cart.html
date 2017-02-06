@@ -1,5 +1,22 @@
 <ion-view view-title="购物车 ">
+
   <ion-content scroll="false" class="has-tabs-top">
-  	<img src='img/123.jpg' onerror="this.src='img/adam.jpg'">
+	  <ul class="list">
+      <li class="item item-checkbox">
+         Item 1
+         <label class="checkbox">
+         <input type="checkbox">
+         </label>
+      </li>
+
+      <li class="item item-checkbox">
+         Item 2
+         <label class="checkbox">
+         <input type="checkbox" checked="Checked">
+         </label>
+      </li>
+	  </ul>
+    <!-- 图片链接错误情况处理 -->
+  	<img src='img/123.jpg' onerror="this.src='img/adam.jpg'" class="full-image">
   </ion-content>
 </ion-view>
